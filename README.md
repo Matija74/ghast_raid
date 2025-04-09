@@ -1,2 +1,5 @@
-# ghast_invaders
-Ghast Invaders is another school project of mine.
+# Ghast Raid
+##Description
+Ghast Raid is a school project im working on. ...
+##Functionalities
+The player moves horizontally across the screen with A and D keys while shooting arrow projectiles with SPACE key. ...
