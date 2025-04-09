@@ -1,5 +1,5 @@
 # Ghast Raid
-##Description
+## Description
 Ghast Raid is a school project im working on. ...
-##Functionalities
+## Functionalities
 The player moves horizontally across the screen with A and D keys while shooting arrow projectiles with SPACE key. ...
