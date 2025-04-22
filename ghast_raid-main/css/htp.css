@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/firstbg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+/* Glavni div */
+body > div {
+    width: 50%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: white;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title-with-back {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.title-with-back h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 4px #000;
+    font-family: 'TitleFont', sans-serif; /* ali kar uporabljaš za naslov */
+    color: white;
+}
+
+.back-button {
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-family: 'TextFont', sans-serif;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.rules{
+    margin-top: 20px;
+    font-family: 'TextFont', sans-serif; /* Uporabi tvoj font */
+    font-size: 1.1rem;
+    color: white;
+    text-align: left;
+    line-height: 1.6;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+@font-face {
+    font-family: 'TitleFont';
+    src: url('../fonts/Minecrafter.Reg.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'TextFont';
+    src: url('../fonts/MinecraftRegular-Bmg3.otf') format('woff2');
+}
