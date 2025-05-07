@@ -1,0 +1,31 @@
+html, body {
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-image: url('../img/standard.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+canvas {
+    display: block;
+}
+
+.textfont-swal {
+    font-family: 'TextFont', sans-serif;
+}
+
+@font-face {
+    font-family: 'TitleFont';
+    src: url('../fonts/Minecrafter.Reg.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'TextFont';
+    src: url('../fonts/MinecraftRegular-Bmg3.otf') format('woff2');
+}
